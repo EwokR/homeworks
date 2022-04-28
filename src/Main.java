@@ -11,9 +11,14 @@ public class Main {
         Book book2 = new Book("Seagull", 1896,author2);
         System.out.println(author1.getFirstName() + " " + author1.getSurname());
         System.out.println(author2.getFirstName() + " " + author2.getSurname());
-        System.out.println(book1.getName() + " " + book1.getYearOfPublication() + " " + book1.getAuthor());
-        System.out.println(book2.getName() + " " + book2.getYearOfPublication() + " " + book2.getAuthor());
+        System.out.println(book1.getName() + " " + book1.getYearOfPublication() + " " + book1.getAuthor().getFirstName() + " " + book1.getAuthor().getSurname());
+        System.out.println(book2.getName() + " " + book2.getYearOfPublication() + " " + book2.getAuthor().getFirstName() + " " + book2.getAuthor().getSurname());
         book1.setYearOfPublication(2022);
         System.out.println(book1.getYearOfPublication());
+        System.out.println();
+        System.out.println(book1.toString());
+        System.out.println(book2.toString());
+        System.out.println(book1.equals(book2));
+
     }
 }
