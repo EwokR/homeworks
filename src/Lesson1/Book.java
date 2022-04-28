@@ -40,6 +40,18 @@ public class Book {
         Book book = (Book) o;
         return yearOfPublication == book.yearOfPublication && name.equals(book.name) && author.equals(book.author);
     }
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        } else if (this.getName() != ((Book) other).getName()) {
+            return false;
+        }else if (this.getYearOfPublication() != ((Book) other).getYearOfPublication()) {
+            return false;
+        }else if (this.getAuthor() != ((Book) other).getAuthor()){
+            return false;
+        }
+        Book book1 = (Book) other;
+        return name.equals(book1.name);
 
     @Override
     public int hashCode() {
