@@ -15,7 +15,9 @@ public class Main {
         System.out.println(book2.getName() + " " + book2.getYearOfPublication() + " " + book2.getAuthor().getFirstName() + " " + book2.getAuthor().getSurname());
         book1.setYearOfPublication(2022);
         System.out.println(book1.getYearOfPublication());
-        System.out.println();
+        String s = "*";
+        String s1= s.repeat(12);
+        System.out.println(s1);
         System.out.println(book1.toString());
         System.out.println(book2.toString());
         System.out.println(book1.equals(book2));
